@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="webdevportfolio.css">
+
+    <!-- BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+
+</head>
+<body class="body">
+    <div class="head">
+        <h1 class="headMsg h1">console</h1>
+        <h1 class="h2">.</h1>
+        <h1 class="h3">log</h1>
+        <h1 class="h4">(</h1>
+        <h1 class="msgContent"></h1>
+    </div>
+    <h2 class="quote2">
+        from baking cookies in the kitchen... <br>
+        to dealing with cookies in the browser...
+    </h2>
+    
+    <!-- NAVIGATION -->
+    <div class="navBar">
+        <button class="btnLinks about"  onclick="openContent(event,'home')" id="active" >HOME</button>
+        <button class="btnLinks about" onclick="openContent(event,'about')">ABOUT</button>
+        <button class="btnLinks educ"  onclick="openContent(event,'educ')">EDUCATION</button>
+        <button class="btnLinks expi"  onclick="openContent(event,'expi')">EXPERIENCE</button>
+        <button class="btnLinks skill" onclick="openContent(event,'skill') " >SKILL</button>
+        <button class="btnLinks proj"   onclick="openContent(event,'proj')" >PROJECT</button>
+    </div>
+        
+        <hr class="hr1">
+        
+        <main>
+            <div id="home" class="tabcontent headerbox">
+                <!-- IMAGE -->
+                <div class="flipCard">
+                    <div class="flipCardInner">
+                        <div class="headBox1 flipFront">
+                            <img src="images/pic2.jpg" alt="avatar" class="avatar">
+                        </div>
+                        <div class="headBox1 flipBack">
+                            <img src="images/avatar.png" alt="avatar" class="avatar back">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header">
+                <!-- CONTACT INFO -->
+                    <div class="socialBar">
+                        <div>
+                            <img class="icon" src="png/006-chat.png">
+                            <a class="tel" href="tel:+639222053937">+639222053937</a>
+                        </div>
+                        <div>
+                            <img class="icon" src="png/002-gmail.png">
+                            <a class="email" href="mailto: anghellongalong@gmail.com">anghellongalong@gmail.com</a>
+                            
+                        </div>
+                        <div>
+                            <img class="icon" src="png/001-yahoo.png">
+                            <a class="email" href="mailto: amlongalong@ymail.com">amlongalong@ymail.com</a>
+                            <br>
+                            <a class="email" href="mailto: amrlongalong@yahoo.com">amrlongalong@yahoo.com</a>
+                            
+                        </div>
+                        <div>
+                            <img class="icon" src="png/003-linkedin.png">
+                            <a class="link" href="https://www.linkedin.com/in/angelica-marie-longalong-764237142/">https://www.linkedin.com/in/angelica-marie-longalong-764237142/</a>
+                        </div>
+                        <div>
+                            <img class="icon hub"src="png/005-github.png">
+                            <a href="https://github.com/amlongalong" class="git">
+                                https://github.com/amlongalong
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- QUOTE -->
+                    <div class="quote1">
+                        <h3 class="quote">"It's a brave new world. It’s not just about finding a new job. It’s about changing careers. You're taking a leap of faith. Stepping into the unknown. You're trading comfort and familiarity for a better life"
+                            <div class="lastdiv">
+                                - Career Shifter
+                            </div> 
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- ABOUT -->
+        <div id="about" class="tabcontent aboutPage">
+            <strong>
+                <p class="aboutDetails">
+                    I am a hard working, dependable and well mannered individual. <br> 
+                    I always try to see the best in people. <br> I am a fast learner and love learning new things. <br> 
+                    I recently found my new interest which is Coding. <br>
+                    I enjoy it as much I enjoy baking. <br>
+                    I would love to practice and to further develop my new learning and skills. <br> 
+                    To be able to build a new career and find a stable job for long term goals with a good income and support. <br> 
+                    I love baking and cooking. <br>
+                    I plant different kinds of herbs. <br>
+                    I love dogs and guineapigs. <br>
+                    And I love travels.
+                </p>
+            </strong>
+        </div>
+
+        <!-- EDUCATION -->
+        <div id="educ" class="tabcontent timeLineEduc">
+            <div class="educBox edLeft">
+                <div class="educInfo">
+                    <h3>2021</h3>
+                    <h4>Full Stack Developer Course</h4>
+                    <h4>Uplift Code Camp</h4>
+                </div>
+            </div>
+            <div class="educBox edRight">
+                <div class="educInfo">
+                    <h3>2020</h3>
+                    <h4>Commercial Cooking NCII</h4>
+                    <h4>Imus Vocational and Technical School</h4>
+                </div>
+            </div>
+            
+            <div class="educBox edLeft">
+                <div class="educInfo">
+                    <h3>2019</h3>
+                    <h4>Bread and Pastry NCII</h4>
+                    <h4>Cake Decorating</h4>
+                    <h4>Imus Vocational and Technical School</h4>
+                </div>
+            </div>
+            
+            <div class="educBox edRight">
+                <div class="educInfo">
+                    <h3>2008-2013</h3>
+                    <h4>BS-Hotel and Restaurant Management - Cruiseline Major</h4>
+                    <h4>Lyceum of the Philippines University</h4>
+                </div>
+            </div>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <div id="expi" class="tabcontent timeLineExpi">
+            <div class="expiBox xpLeft">
+                <div class="expiContent">
+                    <h3>Nov 2018 - Dec 2019</h3>
+                    <h4>Pastry Cook / Line Cook</h4>
+                    <h4>Malongo Atelier Barista</h4>
+                </div>
+            </div>
+
+            <div class="expiBox xpRight">
+                <div class="expiContent">
+                    <h3>Jan 2014 - May 2018</h3>
+                    <h4>Baker-Team Leader</h4>
+                    <h4>Jco Donuts And Coffee</h4>
+                </div>
+            </div>
+            <div class="expiBox xpRight">
+                <div class="expiContent">
+                    <h3>June 2013 - Dec 2013</h3>
+                    <h4>Baker</h4>
+                    <h4>Jco Donuts And Coffee</h4>
+                </div>
+            </div>
+
+            <div class="expiBox xpLeft">
+                <div class="expiContent">
+                    <h3>Jan 2012 - Dec 2012</h3>
+                    <h4>Baker</h4>
+                    <h4>BreadTalk</h4>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- SKILLS -->
+        <div id="skill" class="tabcontent skillContainer">
+            <h3>HTML</h3>
+            <div class="skillBox">
+                <div class="skillContent s1"><b>80%</b></div>
+            </div>
+            <h3>CSS</h3>
+            <div class="skillBox">
+                <div class="skillContent s2"><b>70%</b></div>
+            </div>
+            <h3>JS</h3>
+            <div class="skillBox">
+                <div class="skillContent s3"><b>50%</b></div>
+            </div>
+            <h3>REACT</h3>
+            <div class="skillBox">
+                <div class="skillContent s4"><b>50%</b></div>
+            </div>
+            <h3>PHP</h3>
+            <div class="skillBox">
+                <div class="skillContent s5"><b>50%</b></div>
+            </div>
+            <h3>MS OFFICE</h3>
+            <div class="skillBox">
+                <div class="skillContent s6"><b>70%</b></div>
+            </div>
+            <h3>BAKING</h3>
+            <div class="skillBox">
+                <div class="skillContent s7"><b>80%</b></div>
+            </div>
+            <h3>CAKE DECORATING</h3>
+            <div class="skillBox">
+                <div class="skillContent s8"><b>70%</b></div>
+            </div>
+        </div>
+
+        <!-- PROJECT -->
+        <div id="proj" class="tabcontent">
+            <div class="projContainer">
+                <div class="projBox">
+                    <strong>
+                        <p class="desc">This is my very first static wed app.It has multi-pages contains different recipe featuring a famous Home-Baker</p>
+                    </strong>
+                    <div class="linkBox">
+                        <strong>
+                            Check it out : 
+                        </strong>
+                        <a class="gitLink" href="https://amlongalong.github.io/RecipeApp/project1.html">https://amlongalong.github.io/RecipeApp/project1.html</a>
+                    </div>
+                    <p class="lang">
+                        LANGUAGE : 
+                        <strong>
+                            Html, Css, Bootstrap
+                        </strong> 
+                    </p>
+                    <p class="concept">
+                        CONCEPT : 
+                        <strong>
+                            Recipes for Baking
+                        </strong>
+                    </p>
+                </div>
+                <div class="projBox">
+                    <strong>
+                        <p class="desc">A simple game app / a walkthrough from a 2007, video game series called Harvest Moon</p>
+                    </strong>
+                    <div class="linkBox">
+                        <strong>
+                            Check it out : 
+                        </strong>
+                        <a class="gitLink" href="https://amlongalong.github.io/GameApp/index.html">https://amlongalong.github.io/GameApp/index.html</a>
+                    </div>
+                    <p class="lang">
+                        LANGUAGE : 
+                        <strong>
+                            Html, Css, Bootstrap and Javascript
+                        </strong> 
+                    </p>
+                    <p class="concept">
+                        CONCEPT : 
+                        <strong>
+                            Game 
+                        </strong>
+                    </p>
+                </div>
+                <div class="projBox">
+                    <strong>
+                        <p class="desc">A simple to do app. You can add,delete and update task</p>
+                    </strong>
+                    <div class="linkBox">
+                        <strong>
+                            Check it out : 
+                        </strong>
+                        <a class="gitLink" href="https://amlongalong.github.io/ToDoApp/">https://amlongalong.github.io/ToDoApp/</a>
+                    </div>
+                    <p class="lang">
+                        LANGUAGE : 
+                        <strong>
+                            React - Redux
+                        </strong> 
+                    </p>
+                    <p class="concept">
+                        CONCEPT : 
+                        <strong>
+                            To-do app
+                        </strong>
+                    </p>
+                </div>
+                <div class="projBox">
+                    <strong>
+                        <p class="desc">A simple application where can you add item to cart, delete items and change quantity of the item. It can also add menu and delete menu item.
+                        </p>
+                    </strong>
+                    <div class="linkBox">
+                        <strong>
+                            Check it out : 
+                        </strong>
+                        <a class="gitLink" href="https://amlongalong.github.io/RestoApp">https://amlongalong.github.io/RestoApp</a>
+                    </div>
+                    <p class="lang">
+                        LANGUAGE : 
+                        <strong>
+                            React - Redux
+                        </strong> 
+                    </p>
+                    <p class="concept">
+                        CONCEPT : 
+                        <strong>
+                            Restaurant, Add to Cart  
+                        </strong>
+                    </p>
+                </div>
+                <div class="projBox">
+                    <strong>
+                        <p class="desc">Its all about pokemons and types. Linking it using react router</p>
+                    </strong>
+                    <div class="linkBox">
+                        <strong>
+                            Check it out : 
+                        </strong>
+                        <a class="gitLink" href="https://amlongalong.github.io/PokeDex/">https://amlongalong.github.io/PokeDex/</a>
+                    </div>
+                    <p class="lang">
+                        LANGUAGE : 
+                        <strong>
+                            React-Routes
+                        </strong> 
+                    </p>
+                    <p class="concept">
+                        CONCEPT : 
+                        <strong>
+                            Pokedex 
+                        </strong>
+                    </p>
+                </div>
+                <div class="projBox">
+                    <strong>
+                        <p class="desc">My fisrt Full Stack Web Application. </p>
+                    </strong>
+                    <div class="linkBox">
+                        <strong>
+                            Check it out : 
+                        </strong>
+                        <a class="gitLink" href="https://amlongalong.github.io/RecipeApp/project1.html">https://amlongalong.github.io/RecipeApp/project1.html</a>
+                    </div>
+                    <p class="lang">
+                        LANGUAGE : 
+                        <strong>
+                            React - Redux, Express
+                        </strong> 
+                    </p>
+                    <p class="concept">
+                        CONCEPT : 
+                        <strong>
+                            Supply Management, Inventory Monitoring App 
+                        </strong>
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <!-- FOOTER  -->
+    <footer>
+        <hr class="hr2">
+        <div class="footer">
+            <button 
+            class="footerBtn" onclick="typeWriter()">MATTHEW 6:34</button>
+            <strong>
+                <h3 id="msg"></h3>
+            </strong>
+        </div>
+        <div class="last">
+            <strong>
+                <h5>- Ad Majorem Dei Gloriam - </h5>
+            </strong>
+        </div>
+    </footer>
+
+
+    
+    
+    <script src="webdevportfolio.js"></script>
+</body>
+</html>

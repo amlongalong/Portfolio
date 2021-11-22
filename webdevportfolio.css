@@ -1,0 +1,395 @@
+*   {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* BODY PLUS BACKGROUND */
+.body   {
+    background-image: url('https://wallpaperaccess.com/full/2175228.jpg');
+    background-size: cover;
+}
+
+/* HEAD MSG */
+.head    {
+    margin: 10px;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+}
+.h1 {
+    color: blue;
+}
+.h2 {
+    color: black;
+}
+.h4    {
+    color: chocolate;
+
+}
+.h3     {
+    color: gold;
+}
+.msgContent     {
+    position: relative;
+    color: chocolate;
+}
+.msgContent::after   {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 6vh;
+    border-right: 1px solid white;
+    animation: blink 0.5s infinite ease;
+}
+@keyframes blink    {
+    0%  {
+        opacity: 0;
+    }
+    100%    {
+        opacity: 1;
+    }
+}
+
+/* DIVIDER */
+.hr1, .hr2   {
+    border: blue dashed 2px;
+}
+
+/* NAV BAR */
+.navBar    {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    padding: 3px;
+}
+.btnLinks   {
+    padding: 3px;
+    border-radius: 10px;
+    background-color: white;
+}
+.btnLinks:hover   {
+    opacity: 80%;
+    background-color: lightsteelblue;
+}
+.btnLinks.active  {
+    background-color: lightskyblue;
+}
+
+/* IMAGE */
+.avatar {
+    width: 230px;
+    height: 300px;
+    border-radius: 10px;
+    border: black 2px solid;
+    overflow: hidden;
+}
+.back   {
+    border: solid 3px slategrey;
+}
+.flipCard  {
+    position: relative;
+    width: 250px;
+    height: 300px;
+    z-index: 1;
+    perspective: 1000px;
+    margin: 0 auto
+}
+.flipCardInner  {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.8s linear;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 1px black;
+}
+.flipCardInner:hover {
+    transform: rotateY(180deg);
+}
+.flipFront, .flipBack   {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flipBack {
+    transform: rotateY(180deg);
+}
+
+/* SOCIAL BAR */
+.socialBar    {
+    flex-direction: column;
+    height: fit-content;
+    margin: 10px;
+    padding: 5px;
+
+}
+.icon   {
+    width: 23px;
+}
+.hub    {
+    background-color: gray;
+}
+.link, .tel,
+.email, .git {
+    color: blue;
+}
+
+/* QUOTE */
+.quote  {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* CONTENT */
+.tabcontent     {
+    margin: 10px;
+    text-align: center;
+    display: none;
+    padding: 15px;
+}
+
+/* ABOUT */
+.quote2     {
+    color: red;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+    width: fit-content;
+}
+.aboutDetails   {
+    background-color: white;
+    margin: 0 auto;
+    font-size: large;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 5px;
+    box-shadow:  0 4px 5px 1px black;
+}
+.lastdiv    {
+    text-align: right ;
+}
+
+/* ECUCATION CONTENT AND EXPI CONTENT*/
+.timeLineEduc, .timeLineExpi   {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.timeLineEduc::after, .timeLineExpi::after   {
+    content:"";
+    position: absolute;
+    width: 3px;
+    background-color: lightskyblue;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+.educBox, .expiBox    {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+.educBox::after, .expiBox::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: -9px;
+    background-color: black;
+    border: 3px solid red;
+    top: 21px;
+    border-radius: 50%;
+    z-index: 1;
+}
+.edLeft, .xpLeft {
+    left: 0;
+}
+.edRight, .xpRight {
+    left: 50%;
+}
+.edLeft::before, .xpLeft::before {
+    content: "";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent black;
+}
+.edRight::before, .xpRight::before   {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent black transparent transparent ;
+}
+.educInfo, .expiContent {
+    padding: 10px 10px;
+    background-color: white;
+    border: black 2px solid;
+    position: relative;
+    border-radius: 6px;
+    color: black;
+    box-shadow:  0 4px 5px 1px black;
+}
+.edRight::after, .xpRight::after {
+    left: -12px;
+}
+
+/* SKILL CONTENT */
+.skillBox   {
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    border: black 3px solid;
+    margin: 5px;
+    overflow: hidden;
+}
+div h3  {
+    text-align: left;
+}
+.s1 {
+    width: 80%;
+    background-color: lightskyblue;
+}
+.s2 {
+    width: 70%;
+    background-color: lightskyblue;
+}
+.s3, .s4, .s5 {
+    width: 50%;
+    background-color: lightskyblue;
+}
+.s6 {
+    width: 70%;
+    background-color: lightskyblue;
+}
+.s7 {
+    width: 80%;
+    background-color: lightskyblue;
+}
+.s8 {
+    width: 70%;
+    background-color: lightskyblue;
+}
+.skillContent   {
+    text-align: right;
+    color: black;
+}
+
+/* PROJECT */
+.projBox    {
+    border-radius: 4px;
+    border: black 1px solid;
+    box-shadow: 0 5px 5px 2px black;
+    background-color: skyblue;
+    margin: 20px;
+    padding: 10px;
+}
+.gitLink   {
+    color: blue;
+}
+
+/* FOOTER */
+.footer    {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: small;
+    color: black;
+}
+.footerBtn  {
+    background-color: steelblue ;
+    padding: 1px;
+}
+.last   {
+    text-align: center;
+    font-size: larger;
+    background-color: white;
+}
+
+
+@media only screen and (min-width: 556px) {
+    .flipCard   {
+        width: 200px;
+        height: 0;
+        display: flex;
+        left: 350px;
+    }
+    .avatar     {
+        width: 200px;
+    }
+    .header     {
+        display: flex;
+        width: 80%;
+        padding-right: 60px;
+    }
+    .quote1     {
+        padding: 20px;
+        background-color: white;
+        color: green;
+        opacity: 90%;
+        width: 60%;
+    }
+    .hr2    {
+        margin-top: 100px;
+    }
+    .aboutPage  {
+        margin-top: 40px;
+    }
+    .skillContainer    {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .projContainer  {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .projBox    {
+        width: 45%;
+        background-color: skyblue;
+        padding: 20px;
+    }
+}
+
+
+
+@media only screen and (min-width: 991px) {
+    .flipCard   {
+        width: 200px;
+        height: 0;
+        display: flex;
+        left: 400px;
+    }
+    .header     {
+        display: flex;
+        width: 80%;
+        padding-right: 100px;
+    }
+    .quote1     {
+        width: fit-content;
+        text-align: center;
+        padding: 50px;
+    }
+    .skillContainer    {
+        width: 50%;
+        margin: 0 auto;
+    }
+    
+    
+    
+}
