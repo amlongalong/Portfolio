@@ -1,5 +1,5 @@
 // HEAD
-let msgs = ['"Hello World...")','"I`m Angel")','"Welcome to my page!")']
+let msgs = ['"Hello World..."','"I`m Angel"','"Welcome to my page!"']
 let count = 0;
 let index = 0;
 let currentText = '';
